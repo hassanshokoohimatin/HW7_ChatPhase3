@@ -7,7 +7,7 @@ public class Client {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the IP and port of the server");
         try(Socket socket = new Socket(input.next(),input.nextInt())){
-            System.out.println("connected to the server...");
+            System.out.println("Connected to the server...");
             InputStream inputStream = socket.getInputStream();
             OutputStream outputStream = socket.getOutputStream();
             DataInputStream reader = new DataInputStream(inputStream);

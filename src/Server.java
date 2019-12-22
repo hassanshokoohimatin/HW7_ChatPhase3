@@ -39,12 +39,12 @@ public class Server {
                     fromClient = reader.readLine();
                     System.out.println("Client familyName : " + fromClient);
                 }else{
-                    System.out.println("wrong password by client");
-                    writer.println("wrong pass");
+                    System.out.println("The Client entered wrong password");
+                    writer.println("Wrong Password");
                 }
             }else{
-                System.out.println("wrong username by client");
-                writer.println("wrong user");
+                System.out.println("The Client entered wrong username");
+                writer.println("Wrong username");
 
             }
         }
